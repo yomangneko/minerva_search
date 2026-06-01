@@ -1,0 +1,1 @@
+Minerva Search is an open-source public library search engine that integrates Data4Library, National Library of Korea, and Naver APIs to help users discover books and libraries through natural-language queries.
