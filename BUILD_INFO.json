@@ -1,0 +1,14 @@
+{
+  "name": "minerva_search",
+  "version": "1.2.40",
+  "variant": "deploy",
+  "source": "minerva_search_v1.2.40_intent_ranking_bugcheck.zip",
+  "builtAtUtc": "2026-06-01T08:22:50Z",
+  "notes": [
+    "Production-oriented backend package",
+    "Intent-aware library result ranking bugfix included",
+    "Development backups and accumulated patch notes removed",
+    "Internal npm registry URLs normalized to public npm registry URLs",
+    "Unused lru-cache dependency removed"
+  ]
+}

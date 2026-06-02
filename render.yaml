@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: minerva-search-api
+    env: node
+    rootDir: backend
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: HEALTH_EXPOSE_DETAILS
+        value: "0"
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: DATA4LIBRARY_API_KEY
+        sync: false
+      - key: NAVER_CLIENT_ID
+        sync: false
+      - key: NAVER_CLIENT_SECRET
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: NATIONAL_LIBRARY_API_KEY
+        sync: false
+      - key: NOTION_API_KEY
+        sync: false
+      - key: NOTION_FAQ_DATABASE_ID
+        sync: false
+      - key: ADMIN_SECRET
+        sync: false
